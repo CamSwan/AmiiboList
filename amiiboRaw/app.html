@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!--Custom CSS-->
+  <!--Custom CSS: This calls the CSS file app.css for the website to use.-->
   <link rel="stylesheet" href="app.css" />
 
   <title>Amiibo List</title>
@@ -17,20 +17,24 @@
   <div class="row">
     <div class="column">
       <p>
+        <!--This is the Amiibo logo for the website.-->
         <img src="logo.svg" alt="Amiibo" style="width: 100%;">
       </p>
     </div>
     <div class="column">
       <p>
+        <!--This loads the Amiibo API for the dropdown list names.-->
         <button class="button" onclick="getAmiibo()"><h1>Open List</h1></button>
       </p>
     </div>
     <div class="column">
       <p>
+        <!--Loading wheel for the Amiibo API list.-->
         <div class="loader" id="loader" style="visibility: hidden;"></div>
+        <!--This is the dropdown list of Amiibos.-->
         <select style="margin: 20px; visibility: hidden; top: 0;" id="amiibo">
-          
         </select>
+        <!--This button selects Amiibo listed in the dropdown.-->
         <button class="button" id="detail" style="visibility: hidden; top: 20px" onclick="getDetail()"><h3>Details</h3></button>
       </p>
     </div>
@@ -39,6 +43,7 @@
   <!--Content-->
   <div class="row">
     <div class="column">
+      <!--This displays the Amiibo before the one that you clicked on in the dropdown list.-->
       <div class="card">
         <p><div class="loader" id="loader1" style="visibility: hidden;"></div></p>
         <p id="info1"></p>
@@ -46,6 +51,7 @@
     </div>
 
     <div class="column">
+      <!--This displays the Amiibo you clicked on in the dropdown list.-->
       <div class="card">
         <p><div class="loader" id="loader2" style="visibility: hidden;"></div></p>
         <p id="info2"></p>
@@ -53,6 +59,7 @@
     </div>
     
     <div class="column">
+      <!--This displays the Amiibo after the one you clicked on in the dropdown list.-->
       <div class="card">
         <p><div class="loader" id="loader3" style="visibility: hidden;"></div></p>
         <p id="info3"></p>
@@ -65,6 +72,7 @@
     <div class="row">
       <div class="column">
         <p>
+          <!--This is Nintendo's logo with a link to their website.-->
           <img src="nintendo.svg" alt="Nintendo Logo" style="width: 60%" href="https://www.nintendo.com/">
         </p>
       </div>
@@ -73,6 +81,7 @@
       </div>
       <div class="column">
         <p>
+          <!--This is a link to the API documentation.-->
           <a href="https://amiiboapi.com/docs/" target="_blank" rel="noopener noreferrer" style="color: white;"> Amiibo API Documentation </a>
         </p>
       </div>
